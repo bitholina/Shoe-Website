@@ -1,0 +1,47 @@
+.gridcontainer {
+  grid-template-areas:
+    "n n n n n h h h h h h h"
+    "a a c c c c c c c c c c"
+    "a a c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.about-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding-left: 250px;
+}
+
+.about-item {
+  margin-bottom: 15px;
+  width: 700px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+/*-- A S I D E ------------------------------------ s i d e n a v-------------------------------- s i d e n a v ------------------*/
+
+.sidenav {
+  margin-left: 30px;
+  margin-top: 20px;
+  position: fixed;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #908f90;
+  display: block;
+}
+
+.sidenav a:hover {
+  font-weight: bold;
+}
+
+.sidenav a:active {
+  color: #3f3f3f;
+}

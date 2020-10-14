@@ -1,0 +1,79 @@
+html,
+body {
+  background-image: url(../images/cont.jpg);
+}
+
+section {
+  grid-area: c;
+}
+
+.gridcontainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px auto auto auto;
+  grid-template-areas:
+    "n n n n n h h h h h h h"
+    "c c c c c c c c c c c c"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+#contactForm {
+  color: #646463;
+  width: 40%;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.form-control,
+select,
+textarea {
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  resize: vertical;
+}
+textarea {
+  min-height: 200px;
+}
+
+.btn-primary {
+  color: #fff;
+  float: right;
+  background-color: #908f90;
+  border: none;
+  padding: 18px 90px 18px 90px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+}
+.btn-primary:hover {
+  background-color: #646463;
+}
+
+/*Errors
+---------------------------------------------------errors------*/
+#nameError {
+  display: none;
+}
+#lastNameError {
+  display: none;
+}
+#emailError {
+  display: none;
+}
+#invalidEmailError {
+  display: none;
+}
+#messageError {
+  display: none;
+}

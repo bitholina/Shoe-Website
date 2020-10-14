@@ -1,0 +1,41 @@
+.gridcontainer {
+  grid-template-areas:
+    "n n n n n h h h h h h h"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+/*-- i n d e x ------------------------------------i n d e x-------------------------------- i n d e x ------------------*/
+
+.index-content {
+  margin: auto;
+  width: 1200px;
+}
+
+.index {
+  height: 450px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.index img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  margin: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: white;
+  height: auto;
+}
+#customer_headline {
+  margin-left: 20px;
+}

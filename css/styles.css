@@ -1,0 +1,144 @@
+/* Adobe Typekit fonts
+-----------------------------------------------------------------------------------------------------------------*/
+@import url("https://use.typekit.net/fel7ebt.css");
+
+/*-- g l o b a l ------------------------------------ g l o b a l ------------------------------- g l o b a l ------------------*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  font-style: normal;
+  color: #3f3f3f;
+}
+/*------Grid set up------------------------------*/
+.gridcontainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px auto auto auto;
+  grid-template-areas:
+    "n n n n n h h h h h h h"
+    "a a c c c c c c c c c c"
+    "a a c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.container > aside,
+section,
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header {
+  grid-area: h;
+
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(177, 176, 176);
+}
+nav {
+  grid-area: n;
+
+  border-bottom: 2px solid rgb(177, 176, 176);
+}
+aside {
+  grid-area: a;
+  background-color: rgb(241, 239, 235);
+}
+main {
+  grid-area: c;
+  background-color: rgb(241, 239, 235);
+}
+
+footer {
+  grid-area: f;
+  background-color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  z-index: 2;
+  height: 400px;
+  width: 100%;
+}
+
+.item {
+  margin-left: 80px;
+  padding: 30px;
+  line-height: 2.1em;
+  color: #646463;
+  font-family: roboto, sans-serif;
+}
+
+.item a img {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item a {
+  color: #646463;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #646463;
+  font-weight: bold;
+}
+
+.item a:visited {
+  color: #908f90;
+}
+
+/*------Logo and icon------------------------------*/
+.logo {
+  cursor: pointer;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 0px 20px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+/*------Navigation------------------------------*/
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 45px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #908f90;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+span {
+  text-decoration: underline;
+  color: #3f3f3f;
+}
